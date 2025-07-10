@@ -9,36 +9,59 @@
 <body>
   <header>
     <h1>¿Qué es GitHub Local?</h1>
-    <p>Aqui tienes un Manual de usuario para introductorio a git local .... buena suerte!!.</p>
+    <p>Gestiona tus proyectos desde tu computadora con Git y sincronízalos con GitHub para facilitar el trabajo colaborativo y el control de versiones.</p>
   </header>
 
   <main>
     <section class="contenido">
       <h2>Definición</h2>
-      <p><strong>GitHub Local</strong> se refiere al uso de Git en tu máquina local para controlar versiones y luego sincronizar los cambios con tu repositorio remoto en GitHub.</p>
+      <p><strong>GitHub Local</strong> se refiere al uso de Git en tu máquina local para gestionar versiones de tus proyectos, con la posibilidad de conectarlo a GitHub como repositorio remoto. Esto te permite mantener un historial completo de tus cambios, colaborar con otros programadores, y restaurar versiones anteriores cuando lo necesites.</p>
+      <p>El trabajo local con Git es esencial para los desarrolladores, ya que proporciona una forma segura y flexible de gestionar el código fuente sin depender siempre de una conexión a Internet. GitHub entra en juego como el medio para compartir, colaborar y almacenar copias remotas de estos repositorios.</p>
 
-      <h2>Pasos básicos</h2>
+      <h2>Pasos básicos para trabajar con GitHub Local</h2>
       <ol>
-        <li>Instala Git en tu computadora.</li>
-        <li>Configura Git con tu nombre y correo:</li>
-        <pre><code>git config --global user.name "Tu Nombre"</code></pre>
-        <pre><code>git config --global user.email "tucorreo@ejemplo.com"</code></pre>
-        <li>Clona un repositorio o inicia uno nuevo:</li>
-        <pre><code>git clone https://github.com/usuario/repositorio.git</code></pre>
-        <pre><code>git init</code></pre>
-        <li>Agrega y confirma tus cambios:</li>
-        <pre><code>git add .</code></pre>
-        <pre><code>git commit -m "Primer commit"</code></pre>
-        <li>Conecta tu repositorio remoto (si no está):</li>
-        <pre><code>git remote add origin https://github.com/usuario/repositorio.git</code></pre>
-        <li>Sube tus cambios a GitHub:</li>
-        <pre><code>git push -u origin main</code></pre>
+        <li>
+          <strong>1. Instala Git:</strong> 
+          Descarga e instala Git desde su página oficial (<a href="https://git-scm.com" target="_blank">git-scm.com</a>). Es una herramienta esencial para el control de versiones. Al instalarlo, también obtienes Git Bash, una terminal con comandos de Git listos para usarse.
+        </li>
+
+        <li>
+          <strong>2. Configura tu identidad:</strong> 
+          Antes de empezar a trabajar, necesitas identificarte para que Git registre quién realiza los cambios. Ejecuta los siguientes comandos en Git Bash:
+          <pre><code>git config --global user.name "Tu Nombre"</code></pre>
+          <pre><code>git config --global user.email "tucorreo@ejemplo.com"</code></pre>
+          Esto asegura que cada commit (registro de cambio) esté correctamente atribuido a ti.
+        </li>
+
+        <li>
+          <strong>3. Inicia un repositorio o clona uno existente:</strong> 
+          Puedes comenzar un proyecto desde cero con:
+          <pre><code>git init</code></pre>
+          Esto crea un repositorio local en la carpeta actual.<br/>
+          O si ya tienes un proyecto en GitHub, clónalo con:
+          <pre><code>git clone https://github.com/usuario/repositorio.git</code></pre>
+          Esto descarga una copia del repositorio remoto en tu computadora.
+        </li>
+
+        <li>
+          <strong>4. Agrega y confirma tus cambios:</strong> 
+          Cada vez que hagas modificaciones en tu proyecto, debes agregarlas y confirmarlas (committearlas) para que queden registradas:
+          <pre><code>git add .</code></pre>
+          <pre><code>git commit -m "Descripción de los cambios"</code></pre>
+          El primer comando selecciona los archivos a rastrear, y el segundo guarda un registro con un mensaje explicativo.
+        </li>
+
+        <li>
+          <strong>5. Conecta con GitHub y sincroniza:</strong>
+          Si creaste un repositorio nuevo en GitHub, puedes conectarlo con tu repositorio local:
+          <pre><code>git remote add origin https://github.com/usuario/repositorio.git</code></pre>
+          Luego puedes subir tus cambios con:
+          <pre><code>git push -u origin main</code></pre>
+          Esto envía tus commits locales al servidor remoto en GitHub.
+        </li>
       </ol>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 GitHub Local Tutorial. Todos los derechos reservados.</p>
-  </footer>
 </body>
 </html>
+
