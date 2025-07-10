@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Local</title>
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+  <header>
+    <h1>¿Qué es GitHub Local?</h1>
+    <p>Gestiona tus proyectos desde tu computadora con Git y sincronízalos con GitHub.</p>
+  </header>
+
+  <main>
+    <section class="contenido">
+      <h2>Definición</h2>
+      <p><strong>GitHub Local</strong> se refiere al uso de Git en tu máquina local para controlar versiones y luego sincronizar los cambios con tu repositorio remoto en GitHub.</p>
+
+      <h2>Pasos básicos</h2>
+      <ol>
+        <li>Instala Git en tu computadora.</li>
+        <li>Configura Git con tu nombre y correo:</li>
+        <pre><code>git config --global user.name "Tu Nombre"</code></pre>
+        <pre><code>git config --global user.email "tucorreo@ejemplo.com"</code></pre>
+        <li>Clona un repositorio o inicia uno nuevo:</li>
+        <pre><code>git clone https://github.com/usuario/repositorio.git</code></pre>
+        <pre><code>git init</code></pre>
+        <li>Agrega y confirma tus cambios:</li>
+        <pre><code>git add .</code></pre>
+        <pre><code>git commit -m "Primer commit"</code></pre>
+        <li>Conecta tu repositorio remoto (si no está):</li>
+        <pre><code>git remote add origin https://github.com/usuario/repositorio.git</code></pre>
+        <li>Sube tus cambios a GitHub:</li>
+        <pre><code>git push -u origin main</code></pre>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GitHub Local Tutorial. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
